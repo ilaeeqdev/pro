@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instagram Home</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background:#fafafa;
+}
+
+/* Navbar */
+.navbar{
+    height:60px;
+    background:#fff;
+    border-bottom:1px solid #ddd;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    position:fixed;
+    width:100%;
+    top:0;
+}
+
+.logo{
+    font-family: 'Grand Hotel', cursive;
+    font-size:30px;
+}
+
+.search-box input{
+    padding:6px;
+    width:250px;
+    border:1px solid #dbdbdb;
+    background:#efefef;
+    border-radius:5px;
+    outline:none;
+}
+
+.nav-icons span{
+    margin-left:20px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+/* Main Layout */
+.container{
+    display:flex;
+    justify-content:center;
+    margin-top:80px;
+}
+
+.feed{
+    width:600px;
+}
+
+/* Stories */
+.stories{
+    display:flex;
+    background:#fff;
+    padding:15px;
+    border:1px solid #ddd;
+    margin-bottom:20px;
+    overflow-x:auto;
+}
+
+.story{
+    text-align:center;
+    margin-right:15px;
+}
+
+.story img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    border:2px solid #ff4d6d;
+    padding:2px;
+}
+
+.story p{
+    font-size:12px;
+}
+
+/* Post */
+.post{
+    background:#fff;
+    border:1px solid #ddd;
+    margin-bottom:20px;
+}
+
+.post-header{
+    display:flex;
+    align-items:center;
+    padding:10px;
+}
+
+.post-header img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    margin-right:10px;
+}
+
+.post-image img{
+    width:100%;
+}
+
+.post-actions{
+    padding:10px;
+    font-size:22px;
+}
+
+.post-caption{
+    padding:0 10px 10px 10px;
+    font-size:14px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="logo">Instagram</div>
+    <div class="search-box">
+        <input type="text" placeholder="Search">
+    </div>
+    <div class="nav-icons">
+        <span>🏠</span>
+        <span>💬</span>
+        <span>➕</span>
+        <span>❤️</span>
+        <span>👤</span>
+    </div>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="feed">
+
+        <!-- Stories Section -->
+        <div class="stories">
+            <div class="story">
+                <img src="https://i.pravatar.cc/60?img=1">
+                <p>user1</p>
+            </div>
+            <div class="story">
+                <img src="https://i.pravatar.cc/60?img=2">
+                <p>user2</p>
+            </div>
+            <div class="story">
+                <img src="https://i.pravatar.cc/60?img=3">
+                <p>user3</p>
+            </div>
+            <div class="story">
+                <img src="https://i.pravatar.cc/60?img=4">
+                <p>user4</p>
+            </div>
+        </div>
+
+        <!-- Post 1 -->
+        <div class="post">
+            <div class="post-header">
+                <img src="https://i.pravatar.cc/40?img=5">
+                <strong>user5</strong>
+            </div>
+            <div class="post-image">
+                <img src="https://picsum.photos/600/400?random=1">
+            </div>
+            <div class="post-actions">
+                ❤️ 💬 📤
+            </div>
+            <div class="post-caption">
+                <strong>user5</strong> Beautiful day 🌞
+            </div>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="post">
+            <div class="post-header">
+                <img src="https://i.pravatar.cc/40?img=6">
+                <strong>user6</strong>
+            </div>
+            <div class="post-image">
+                <img src="https://picsum.photos/600/400?random=2">
+            </div>
+            <div class="post-actions">
+                ❤️ 💬 📤
+            </div>
+            <div class="post-caption">
+                <strong>user6</strong> Enjoying the moment ✨
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
